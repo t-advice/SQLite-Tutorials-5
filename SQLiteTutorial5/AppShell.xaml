@@ -11,4 +11,9 @@
         ContentTemplate="{DataTemplate views:MainPage}"
          />
 
+    <ShellContent
+    Route="AddBookPage"
+    ContentTemplate="{DataTemplate views:AddBookPage}"
+     />
+    
 </Shell>
