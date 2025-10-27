@@ -7,6 +7,7 @@ using SQLite;
 
 namespace SQLiteTutorial5.Models
 {
+    // This defines our book table with simple fields 
     public class Book
     {
         [PrimaryKey, AutoIncrement]
