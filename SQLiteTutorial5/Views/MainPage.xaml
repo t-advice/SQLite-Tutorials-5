@@ -2,7 +2,53 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SQLiteTutorial5.MainPage">
+    <VerticalStackLayout Padding="15">
+        <Button Text="Add NEW Book"
+                Clicked="OnAddBookClicked"
+                BackgroundColor="#4A90E2"
+                TextColor="white"
+                CornerRadius="6"
+                Margin="0,10"/>
+        <CollectionView x:Name="BooksCollection"
+                        SelectionMode="None">
 
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BorderColor="#ddd" Margin="0,5" Padding="10" CornerRadius="12">
+                        <StackLayout>
+                            <Label Text="{Binding Title}" FontAttributes="Bold" FontSize="18" />
+                            <Label Text="{Binding Author}" FontSize="14" TextColor="#666"/>
+                            <Label Text="{Binding Genre}" FontSize="13" TextColor="#888"/>
+                            <Label Text="{Binding Year}" FontSize="13" TextColor="#999"/>
+
+                            <Button Text="Delete"
+                                    BackgroundColor="#E74C3C"
+                                    TextColor="White"
+                                    CornerRadius="6"
+                                    Padding="5"
+                                    Clicked="OnDeleteBookClicked"/>
+
+
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            
+            
+            
+        </CollectionView>
+
+
+
+
+
+
+
+
+
+
+
+    </VerticalStackLayout>
    
 
 </ContentPage>
