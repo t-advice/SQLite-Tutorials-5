@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Android.Renderscripts;
 using SQLite;
 
 namespace SQLiteTutorial5.Models
@@ -16,7 +15,7 @@ namespace SQLiteTutorial5.Models
         public string Author { get; set; }
         public int Year { get; set; }
         public string Genre { get; set; }
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
     }
 }
