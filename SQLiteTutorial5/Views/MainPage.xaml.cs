@@ -9,7 +9,7 @@ namespace SQLiteTutorial5.Views
 
         public MainPage()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         protected override async void OnAppearing()
