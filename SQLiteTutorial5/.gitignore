@@ -1,0 +1,42 @@
+﻿
+### 🧾 **.gitignore**
+```gitignore
+# Build directories
+bin/
+obj/
+AppPackages/
+BundleArtifacts/
+TestResults/
+GeneratedFiles/
+build/
+# User-specific
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.tmp
+*.log
+*.vscode/
+.vs/
+.idea/
+# MAUI and platform files
+platforms/android/bin/
+platforms/android/obj/
+platforms/ios/bin/
+platforms/ios/obj/
+# SQLite database
+*.db
+*.db3
+*.sqlite
+# macOS and Windows cache
+.DS_Store
+Thumbs.db
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+# Backup and temporary files
+*.bak
+*.tmp
+*.swp
+*.lock
