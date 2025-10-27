@@ -25,7 +25,7 @@ namespace SQLiteTutorial5.Views
             foreach (var book in list)
                 Books.Add(book);
 
-            BooksCollection.ItemsSource = Books;
+            //BooksCollection.ItemsSource = Books;
         }
 
         private async void OnAddBookClicked(object sender, EventArgs e)
@@ -37,7 +37,7 @@ namespace SQLiteTutorial5.Views
         {
             if (sender is Button button && button.BindingContext is Book book)
             {
-                bool confirm = await DisplayAlert("Delete", $"Delete '{book.Title}'?", "Yes", "No");
+                bool confirm = await DisplayAlert("Delete", $"Delete '{book.Id}'?", "Yes", "No");
                 if (confirm)
                 {
                     await App.Database.DeleteBookAsync(book);
