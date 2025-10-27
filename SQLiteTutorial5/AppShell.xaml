@@ -3,12 +3,13 @@
     x:Class="SQLiteTutorial5.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:SQLiteTutorial5"
+    xmlns:views="clr-namespace:SQLiteTutorial5.Views"
+    x:Class="SQLiteTutorial5.AppShell"
     Title="SQLiteTutorial5">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Title="Book Library"
+        ContentTemplate="{DataTemplate views:MainPage}"
+         />
 
 </Shell>
