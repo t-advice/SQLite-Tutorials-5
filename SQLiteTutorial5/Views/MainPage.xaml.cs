@@ -1,4 +1,6 @@
-﻿using SQLiteTutorial5.Models;
+﻿using Microsoft.Maui.Controls;
+using Microsoft.Maui.Controls.Xaml;
+using SQLiteTutorial5.Models;
 using System.Collections.ObjectModel;
 
 namespace SQLiteTutorial5.Views
@@ -9,7 +11,8 @@ namespace SQLiteTutorial5.Views
 
         public MainPage()
         {
-            this.InitializeComponent();
+            InitializeComponent();
+
         }
 
         protected override async void OnAppearing()

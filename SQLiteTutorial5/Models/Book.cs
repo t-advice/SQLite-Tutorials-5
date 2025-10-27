@@ -14,10 +14,10 @@ namespace SQLiteTutorial5.Models
         public int Id { get; set; }
         [MaxLength(150)]
 
-        public string Title { get; set; }
-        public string Author { get; set; }
+        public string? Title { get; set; }
+        public string? Author { get; set; }
         public int Year { get; set; }
-        public string Genre { get; set; }
+        public string? Genre { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
     }
