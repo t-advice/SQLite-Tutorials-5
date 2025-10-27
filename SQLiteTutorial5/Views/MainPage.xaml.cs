@@ -51,3 +51,13 @@ namespace SQLiteTutorial5.Views
     }
 }
 
+
+public partial class AppShell : Shell
+{
+    public AppShell()
+    {
+        InitializeComponent();
+        Routing.RegisterRoute(nameof(AddBookPage), typeof(AddBookPage));
+    }
+}
+
