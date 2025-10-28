@@ -2,6 +2,7 @@
 using Microsoft.Maui.Controls.Xaml;
 using SQLiteTutorial5.Models;
 using System.Collections.ObjectModel;
+using SQLiteTutorial5.Views;
 
 namespace SQLiteTutorial5.Views
 {
@@ -28,7 +29,7 @@ namespace SQLiteTutorial5.Views
             foreach (var book in list)
                 Books.Add(book);
 
-            //BooksCollection.ItemsSource = Books;
+            BooksCollection.ItemsSource = Books;
         }
 
         private async void OnAddBookClicked(object sender, EventArgs e)
